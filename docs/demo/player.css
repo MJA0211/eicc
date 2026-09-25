@@ -1,0 +1,164 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Segoe UI", sans-serif;
+  background: #101827;
+  color: #f7f9ff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 1680px;
+  margin: auto;
+  padding: 48px 56px;
+}
+a {
+  color: #a8c7ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+:focus-visible {
+  outline: 3px solid #91b9ff;
+  outline-offset: 4px;
+}
+.brand {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+  margin-bottom: 52px;
+}
+.brand span {
+  color: #99a8bf;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #83adff;
+}
+h1 {
+  margin: 18px 0;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  font-weight: 650;
+}
+.intro {
+  max-width: 760px;
+  margin-bottom: 36px;
+  color: #adbad0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.watch-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 28px;
+  align-items: start;
+}
+video {
+  display: block;
+  width: 100%;
+  border: 1px solid #354258;
+  border-radius: 12px;
+  background: #080d16;
+}
+.video-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 0;
+  font-size: 13px;
+  color: #adbad0;
+}
+.note {
+  color: #99a8bf;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 850px;
+}
+.resources {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+  margin: 22px 0;
+  flex-wrap: wrap;
+}
+aside {
+  border: 1px solid #2a364b;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #142034;
+}
+h2 {
+  margin: 0;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.chapters {
+  max-height: 620px;
+  overflow: auto;
+  padding: 0 8px 12px;
+}
+button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  text-align: left;
+  align-items: start;
+  gap: 10px;
+  border: 0;
+  border-radius: 6px;
+  color: #ced8e9;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 12px;
+  cursor: pointer;
+}
+button time {
+  color: #8298b8;
+  font-variant-numeric: tabular-nums;
+}
+button:hover,
+button[aria-current="true"] {
+  background: #24416d;
+  color: #fff;
+}
+button[aria-current="true"] time {
+  color: #bfdaff;
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 28px 24px;
+  }
+  .watch-layout {
+    grid-template-columns: 1fr;
+  }
+  .chapters {
+    max-height: 360px;
+  }
+  .brand {
+    margin-bottom: 36px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  button {
+    transition: background 0.15s;
+  }
+}

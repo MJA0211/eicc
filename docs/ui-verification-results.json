@@ -1,0 +1,328 @@
+{
+  "description": "EICC UI redesign verification; original backend results are retained separately.",
+  "browser": {
+    "stats": {
+      "startTime": "2026-09-14T04:01:12.922Z",
+      "duration": 95596.54199999999,
+      "expected": 25,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "tests": [
+      {
+        "file": "governance.spec.ts",
+        "name": "stakeholder evidence, attachments, change approval and release readiness through the browser",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 16047
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "dashboard uses live metrics, changes views and exports a stored report",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2615
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders projects from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2213
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders requirements from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2353
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders traceability from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2346
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders systems from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2353
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders integrations from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2236
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders test-cases from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2270
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders test-plans from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2304
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders uat from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2299
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders uat-scenarios from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2277
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders incidents from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2331
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders changes from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2354
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders risks from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2229
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders dependencies from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2765
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders releases from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2300
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders reports from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2320
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders training from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2239
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders processes from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2298
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders administration from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2327
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "requirement authoring, filtering, persisted editing and global search",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 6754
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "SOAP failure, defect, mapping correction and passing retest are visible",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 10099
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "traceability filters and release gates are explainable",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 5232
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "keyboard access, dark mode and dashboard accessibility",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 3532
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "mobile navigation stays within the viewport",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2316
+          }
+        ]
+      }
+    ]
+  },
+  "deployed": {
+    "url": "http://127.0.0.1:8080",
+    "checks": [
+      {
+        "name": "Login",
+        "violations": []
+      },
+      {
+        "name": "Light dashboard",
+        "violations": []
+      },
+      {
+        "name": "Dark dashboard",
+        "violations": []
+      },
+      {
+        "name": "Requirements",
+        "violations": []
+      },
+      {
+        "name": "Integration catalog",
+        "violations": []
+      },
+      {
+        "name": "Project reports",
+        "violations": []
+      },
+      {
+        "name": "Mobile requirements",
+        "violations": []
+      }
+    ],
+    "errors": [],
+    "mobile": {
+      "viewport": 390,
+      "document": 390
+    }
+  }
+}

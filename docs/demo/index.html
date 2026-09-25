@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EICC — Recorded demonstration</title>
+    <link rel="stylesheet" href="player.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="../../README.md"
+          >EICC <span>Enterprise Integration Control Center</span></a
+        >
+        <p class="eyebrow">RECORDED PRODUCT WALKTHROUGH</p>
+        <h1>From integration failure<br />to a verified release.</h1>
+        <p class="intro">
+          Explore the redesigned workspace, follow a real SOAP mapping
+          correction, and see the evidence carried through acceptance and
+          release.
+        </p>
+      </header>
+      <div class="watch-layout">
+        <section aria-label="Video demonstration">
+          <video
+            id="demo"
+            controls
+            playsinline
+            preload="metadata"
+            poster="poster.png"
+          >
+            <source src="eicc-walkthrough.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              src="captions.vtt"
+              srclang="en"
+              label="English descriptions"
+            />
+            <p><a href="eicc-walkthrough.mp4">Download the MP4</a></p>
+          </video>
+          <div class="video-details">
+            <span>03:25 · 1600 × 1000 · Captioned, silent</span
+            ><a href="eicc-walkthrough.mp4" download>Download MP4 ↓</a>
+          </div>
+          <p class="note">
+            Captured in Chromium against a disposable database and the actual
+            local API. All organizations and decisions are fictional. Release
+            transitions do not deploy external software.
+          </p>
+          <nav class="resources" aria-label="Related resources">
+            <a href="transcript.md">Read transcript</a
+            ><a href="../screenshots/README.md">Browse screenshots</a
+            ><a href="README.md">Capture details</a>
+          </nav>
+        </section>
+        <aside aria-label="Video chapters">
+          <h2>In this walkthrough</h2>
+          <div class="chapters">
+            <button type="button" data-start="0">
+              <time>00:00</time><span>Welcome to EICC</span>
+            </button>
+            <button type="button" data-start="5.917">
+              <time>00:05</time><span>Project overview</span>
+            </button>
+            <button type="button" data-start="17.206">
+              <time>00:17</time><span>Dark theme</span>
+            </button>
+            <button type="button" data-start="22.584">
+              <time>00:22</time><span>Requirements and traceability</span>
+            </button>
+            <button type="button" data-start="35.39">
+              <time>00:35</time><span>Integration catalog</span>
+            </button>
+            <button type="button" data-start="40.615">
+              <time>00:40</time><span>Explainable release gates</span>
+            </button>
+            <button type="button" data-start="48.651">
+              <time>00:48</time><span>Run a real SOAP test</span>
+            </button>
+            <button type="button" data-start="53.76">
+              <time>00:53</time><span>Inspect the failure</span>
+            </button>
+            <button type="button" data-start="60.455">
+              <time>01:00</time><span>Investigate a linked defect</span>
+            </button>
+            <button type="button" data-start="71.456">
+              <time>01:11</time><span>Correct the source mapping</span>
+            </button>
+            <button type="button" data-start="84.171">
+              <time>01:24</time><span>Retest and retain the evidence</span>
+            </button>
+            <button type="button" data-start="98.247">
+              <time>01:38</time><span>Close the evidence loop</span>
+            </button>
+            <button type="button" data-start="102.404">
+              <time>01:42</time><span>Complete the linked requirements</span>
+            </button>
+            <button type="button" data-start="113.297">
+              <time>01:53</time><span>Record acceptance evidence</span>
+            </button>
+            <button type="button" data-start="127.387">
+              <time>02:07</time><span>Record stakeholder sign-off</span>
+            </button>
+            <button type="button" data-start="135.933">
+              <time>02:15</time><span>Assess and approve the change</span>
+            </button>
+            <button type="button" data-start="162.112">
+              <time>02:42</time><span>Verify every release gate</span>
+            </button>
+            <button type="button" data-start="171.691">
+              <time>02:51</time><span>Complete the fictional release</span>
+            </button>
+            <button type="button" data-start="188.517">
+              <time>03:08</time><span>Generate the delivery document</span>
+            </button>
+            <button type="button" data-start="196.209">
+              <time>03:16</time><span>A connected delivery record</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script>
+      const video = document.querySelector("video");
+      const chapters = [...document.querySelectorAll("[data-start]")];
+      chapters.forEach((button) =>
+        button.addEventListener("click", () => {
+          video.currentTime = Number(button.dataset.start);
+          video.play().catch(() => {});
+        }),
+      );
+      video.addEventListener("timeupdate", () => {
+        let current = chapters[0];
+        for (const button of chapters)
+          if (video.currentTime >= Number(button.dataset.start))
+            current = button;
+        for (const button of chapters) {
+          if (button === current) button.setAttribute("aria-current", "true");
+          else button.removeAttribute("aria-current");
+        }
+      });
+    </script>
+  </body>
+</html>

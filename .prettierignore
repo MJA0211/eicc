@@ -1,0 +1,9 @@
+**/package-lock.json
+docs/screenshots
+.local
+.venv
+node_modules
+frontend/node_modules
+frontend/dist
+frontend/test-results
+frontend/playwright-report

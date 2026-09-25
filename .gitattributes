@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.md whitespace=-blank-at-eol
+*.png -text
+*.webp -text
+*.woff2 -text
+*.mp4 -text
+*.webm -text

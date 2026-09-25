@@ -1,0 +1,276 @@
+{
+  "capturedAt": "2026-09-14T04:23:45.987Z",
+  "source": "Disposable seeded SQLite database; real FastAPI HTTP simulator and browser interactions; no API mocking.",
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "trimStart": 0.347,
+  "chapters": [
+    {
+      "start": 0.347,
+      "title": "Welcome to EICC",
+      "caption": "A recorded walkthrough of the redesigned app. All organizations, records, and approvals are fictional."
+    },
+    {
+      "start": 6.264,
+      "title": "Project overview",
+      "caption": "Coverage, test results, and release readiness are calculated from persisted Northstar records."
+    },
+    {
+      "start": 17.553,
+      "title": "Dark theme",
+      "caption": "The same workspace, with a dark slate palette and accessible semantic status colors."
+    },
+    {
+      "start": 22.931,
+      "title": "Requirements and traceability",
+      "caption": "Business needs connect to functional and technical requirements, integrations, tests, and release scope."
+    },
+    {
+      "start": 35.737,
+      "title": "Integration catalog",
+      "caption": "Inspect system boundaries, REST and SOAP contracts, mappings, and connected delivery evidence."
+    },
+    {
+      "start": 40.962,
+      "title": "Explainable release gates",
+      "caption": "The Northstar pilot remains blocked. Every failed gate identifies the evidence or work still required."
+    },
+    {
+      "start": 48.998,
+      "title": "Run a real SOAP test",
+      "caption": "In a separate qualification project, submit integer case ID 42 to a contract that requires an XML string."
+    },
+    {
+      "start": 54.107,
+      "title": "Inspect the failure",
+      "caption": "The captured request sends xsd:int. The local SOAP service rejects it because case_id must be xsd:string."
+    },
+    {
+      "start": 60.802,
+      "title": "Investigate a linked defect",
+      "caption": "Create the defect from the failed execution, then record the root cause and the intended correction."
+    },
+    {
+      "start": 71.803,
+      "title": "Correct the source mapping",
+      "caption": "Change the case_id transformation from identity to to_string. The test payload remains the integer 42."
+    },
+    {
+      "start": 84.518,
+      "title": "Retest and retain the evidence",
+      "caption": "The corrected mapping sends xsd:string and returns HTTP 200. The earlier failure remains in execution history."
+    },
+    {
+      "start": 98.594,
+      "title": "Close the evidence loop",
+      "caption": "Resolution requires investigation details and a later passing retest against the current contract."
+    },
+    {
+      "start": 102.751,
+      "title": "Complete the linked requirements",
+      "caption": "Complete the reviewed business, functional, and technical requirements after the contract has passed qualification."
+    },
+    {
+      "start": 113.644,
+      "title": "Record acceptance evidence",
+      "caption": "The case operator verifies the current SOAP result and attaches the retained request and response."
+    },
+    {
+      "start": 127.734,
+      "title": "Record stakeholder sign-off",
+      "caption": "Approval identifies both the represented fictional stakeholder and the authenticated demo actor."
+    },
+    {
+      "start": 136.28,
+      "title": "Assess and approve the change",
+      "caption": "Record impact from stored relationships before approval; validation checks the current passing test evidence."
+    },
+    {
+      "start": 162.459,
+      "title": "Verify every release gate",
+      "caption": "Requirements, current tests, acceptance, defects, change validation, deployment notes, and rollback all satisfy the gates."
+    },
+    {
+      "start": 172.038,
+      "title": "Complete the fictional release",
+      "caption": "Authorized transitions record Planned, Ready, Deployed, and Completed. This does not deploy external software."
+    },
+    {
+      "start": 188.864,
+      "title": "Generate the delivery document",
+      "caption": "Release notes are a versioned snapshot generated from the project's stored scope, deployment plan, and readiness."
+    },
+    {
+      "start": 196.556,
+      "title": "A connected delivery record",
+      "caption": "The business-to-technical chain now has passing tests, accepted UAT, a closed defect, and a completed release."
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "login.png",
+      "title": "Demo sign-in",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "dashboard.png",
+      "title": "Project overview",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "dashboard-full.png",
+      "title": "Complete project overview",
+      "width": 1600,
+      "height": 2139,
+      "fullPage": true
+    },
+    {
+      "file": "dashboard-dark.png",
+      "title": "Project overview in dark mode",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "requirements.png",
+      "title": "Requirements register",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "traceability.png",
+      "title": "Filtered traceability matrix",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "integrations.png",
+      "title": "Integration catalog",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "release-readiness.png",
+      "title": "Blocked pilot release gates",
+      "width": 1600,
+      "height": 1977,
+      "fullPage": true
+    },
+    {
+      "file": "execution-failure.png",
+      "title": "Captured SOAP validation fault",
+      "width": 1600,
+      "height": 1414,
+      "fullPage": true
+    },
+    {
+      "file": "field-mappings.png",
+      "title": "Corrected source-to-target mapping",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "execution-evidence.png",
+      "title": "Passing SOAP request and response",
+      "width": 1600,
+      "height": 1381,
+      "fullPage": true
+    },
+    {
+      "file": "incident-timeline.png",
+      "title": "Resolved defect and investigation timeline",
+      "width": 1600,
+      "height": 1463,
+      "fullPage": true
+    },
+    {
+      "file": "uat-approval.png",
+      "title": "Stakeholder acceptance and attached evidence",
+      "width": 1600,
+      "height": 1386,
+      "fullPage": true
+    },
+    {
+      "file": "change-impact.png",
+      "title": "Current change impact assessment",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "release-ready.png",
+      "title": "All mandatory release gates passing",
+      "width": 1600,
+      "height": 1977,
+      "fullPage": true
+    },
+    {
+      "file": "completed-release.png",
+      "title": "Completed release with verified gates",
+      "width": 1600,
+      "height": 1977,
+      "fullPage": true
+    },
+    {
+      "file": "reports.png",
+      "title": "Project report generator",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "release-notes.png",
+      "title": "Generated release notes",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "traceability-complete.png",
+      "title": "Completed delivery traceability",
+      "width": 1600,
+      "height": 900,
+      "fullPage": false
+    },
+    {
+      "file": "dashboard-mobile.png",
+      "title": "Mobile project overview",
+      "width": 390,
+      "height": 844,
+      "fullPage": false
+    },
+    {
+      "file": "mobile-navigation.png",
+      "title": "Mobile navigation drawer",
+      "width": 390,
+      "height": 844,
+      "fullPage": false
+    },
+    {
+      "file": "mobile.png",
+      "title": "Mobile requirements register",
+      "width": 390,
+      "height": 844,
+      "fullPage": false
+    }
+  ],
+  "checks": [
+    "SOAP request failed with a captured string-type validation fault.",
+    "The unchanged integer payload passed after mapping correction; both executions remain in history.",
+    "UAT passed, an actual execution attachment was uploaded, and stakeholder approval was recorded.",
+    "The change and release completed through authorized UI transitions; every mandatory release gate passed.",
+    "Release notes were generated from persisted project data.",
+    "Mobile requirements fit the 390px viewport without document overflow."
+  ],
+  "browserErrors": []
+}

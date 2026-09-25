@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-14T04:26:33.647Z",
+  "artifactHashesChecked": 25,
+  "errors": [],
+  "checks": [
+    "Local HTML player loads the MP4, plays it, seeks to a chapter, and highlights the active chapter.",
+    "The desktop chapter player has no automated WCAG A/AA axe violations.",
+    "Every local link in the player resolves to an existing repository file.",
+    "The chapter player also fits a 390px mobile viewport."
+  ],
+  "video": {
+    "duration": 205.813,
+    "width": 1600,
+    "height": 1000,
+    "error": null
+  }
+}

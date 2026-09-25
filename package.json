@@ -1,0 +1,11 @@
+{
+  "name": "eicc-repository-tools",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write frontend/src frontend/e2e frontend/demo frontend/*.ts docs README.md",
+    "format:check": "prettier --check frontend/src frontend/e2e frontend/demo frontend/*.ts docs README.md"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  }
+}

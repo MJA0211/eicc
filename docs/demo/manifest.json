@@ -1,0 +1,274 @@
+{
+  "capturedAt": "2026-09-14T04:23:45.987Z",
+  "durationSeconds": 205.813,
+  "video": {
+    "file": "eicc-walkthrough.mp4",
+    "codec": "h264",
+    "width": 1600,
+    "height": 1000,
+    "frameRate": "25/1",
+    "frames": 5145,
+    "silent": true,
+    "captions": "Burned into a separate footer below the unmodified app viewport; also provided as WebVTT."
+  },
+  "checks": [
+    "SOAP request failed with a captured string-type validation fault.",
+    "The unchanged integer payload passed after mapping correction; both executions remain in history.",
+    "UAT passed, an actual execution attachment was uploaded, and stakeholder approval was recorded.",
+    "The change and release completed through authorized UI transitions; every mandatory release gate passed.",
+    "Release notes were generated from persisted project data.",
+    "Mobile requirements fit the 390px viewport without document overflow.",
+    "Full MP4 decoded without errors.",
+    "MP4 contains every chapter marker and H.264/yuv420p video."
+  ],
+  "browserErrors": [],
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Welcome to EICC",
+      "caption": "A recorded walkthrough of the redesigned app. All organizations, records, and approvals are fictional.",
+      "end": 5.917
+    },
+    {
+      "start": 5.917,
+      "title": "Project overview",
+      "caption": "Coverage, test results, and release readiness are calculated from persisted Northstar records.",
+      "end": 17.206
+    },
+    {
+      "start": 17.206,
+      "title": "Dark theme",
+      "caption": "The same workspace, with a dark slate palette and accessible semantic status colors.",
+      "end": 22.584
+    },
+    {
+      "start": 22.584,
+      "title": "Requirements and traceability",
+      "caption": "Business needs connect to functional and technical requirements, integrations, tests, and release scope.",
+      "end": 35.39
+    },
+    {
+      "start": 35.39,
+      "title": "Integration catalog",
+      "caption": "Inspect system boundaries, REST and SOAP contracts, mappings, and connected delivery evidence.",
+      "end": 40.615
+    },
+    {
+      "start": 40.615,
+      "title": "Explainable release gates",
+      "caption": "The Northstar pilot remains blocked. Every failed gate identifies the evidence or work still required.",
+      "end": 48.651
+    },
+    {
+      "start": 48.651,
+      "title": "Run a real SOAP test",
+      "caption": "In a separate qualification project, submit integer case ID 42 to a contract that requires an XML string.",
+      "end": 53.76
+    },
+    {
+      "start": 53.76,
+      "title": "Inspect the failure",
+      "caption": "The captured request sends xsd:int. The local SOAP service rejects it because case_id must be xsd:string.",
+      "end": 60.455
+    },
+    {
+      "start": 60.455,
+      "title": "Investigate a linked defect",
+      "caption": "Create the defect from the failed execution, then record the root cause and the intended correction.",
+      "end": 71.456
+    },
+    {
+      "start": 71.456,
+      "title": "Correct the source mapping",
+      "caption": "Change the case_id transformation from identity to to_string. The test payload remains the integer 42.",
+      "end": 84.171
+    },
+    {
+      "start": 84.171,
+      "title": "Retest and retain the evidence",
+      "caption": "The corrected mapping sends xsd:string and returns HTTP 200. The earlier failure remains in execution history.",
+      "end": 98.247
+    },
+    {
+      "start": 98.247,
+      "title": "Close the evidence loop",
+      "caption": "Resolution requires investigation details and a later passing retest against the current contract.",
+      "end": 102.404
+    },
+    {
+      "start": 102.404,
+      "title": "Complete the linked requirements",
+      "caption": "Complete the reviewed business, functional, and technical requirements after the contract has passed qualification.",
+      "end": 113.297
+    },
+    {
+      "start": 113.297,
+      "title": "Record acceptance evidence",
+      "caption": "The case operator verifies the current SOAP result and attaches the retained request and response.",
+      "end": 127.387
+    },
+    {
+      "start": 127.387,
+      "title": "Record stakeholder sign-off",
+      "caption": "Approval identifies both the represented fictional stakeholder and the authenticated demo actor.",
+      "end": 135.933
+    },
+    {
+      "start": 135.933,
+      "title": "Assess and approve the change",
+      "caption": "Record impact from stored relationships before approval; validation checks the current passing test evidence.",
+      "end": 162.112
+    },
+    {
+      "start": 162.112,
+      "title": "Verify every release gate",
+      "caption": "Requirements, current tests, acceptance, defects, change validation, deployment notes, and rollback all satisfy the gates.",
+      "end": 171.691
+    },
+    {
+      "start": 171.691,
+      "title": "Complete the fictional release",
+      "caption": "Authorized transitions record Planned, Ready, Deployed, and Completed. This does not deploy external software.",
+      "end": 188.517
+    },
+    {
+      "start": 188.517,
+      "title": "Generate the delivery document",
+      "caption": "Release notes are a versioned snapshot generated from the project's stored scope, deployment plan, and readiness.",
+      "end": 196.209
+    },
+    {
+      "start": 196.209,
+      "title": "A connected delivery record",
+      "caption": "The business-to-technical chain now has passing tests, accepted UAT, a closed defect, and a completed release.",
+      "end": 205.813
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "docs/demo/eicc-walkthrough.mp4",
+      "bytes": 13489626,
+      "sha256": "a48b878051f3d28c624d9af4b63e990b9f508cbd033db1108889638e0de43ee0"
+    },
+    {
+      "file": "docs/demo/poster.png",
+      "bytes": 425459,
+      "sha256": "e55555edeb1668a69c5385d0488f429d4b09bf6e76c0ab6ed7ae9cd2805a1479"
+    },
+    {
+      "file": "docs/demo/captions.vtt",
+      "bytes": 3377,
+      "sha256": "7475d134698475f9be34833dd38f22aa931a908aebe527c4d0e76b141da3483f"
+    },
+    {
+      "file": "docs/screenshots/login.png",
+      "bytes": 112737,
+      "sha256": "68920d04432f0078c0719f16b732880fd60516784c7b88ddaa66a2cfd08a8c4e"
+    },
+    {
+      "file": "docs/screenshots/dashboard.png",
+      "bytes": 143017,
+      "sha256": "d376056b269f5fdcf5433b39ec562e45d1de985ef120ddf517a124571b5d2f5f"
+    },
+    {
+      "file": "docs/screenshots/dashboard-full.png",
+      "bytes": 266803,
+      "sha256": "ad781b93dccbf1171229ad7947f12e79beb442e17b195f13a492dd766e5d6d46"
+    },
+    {
+      "file": "docs/screenshots/dashboard-dark.png",
+      "bytes": 145279,
+      "sha256": "c9fa54154b6945d68454055f5f3a7e8b750f96a7df0d1f4d422193f02666e32c"
+    },
+    {
+      "file": "docs/screenshots/requirements.png",
+      "bytes": 122628,
+      "sha256": "17a678db001a2be7e3abc807dc5ab4f5bf20974e72d6707628d18749de890412"
+    },
+    {
+      "file": "docs/screenshots/traceability.png",
+      "bytes": 112563,
+      "sha256": "c0ad5262650b3d2fd6131025f48466bc1db36a26b7ff66faff729d9a3cffba29"
+    },
+    {
+      "file": "docs/screenshots/integrations.png",
+      "bytes": 123034,
+      "sha256": "35a307a17fd775b287caadcea8cabb3faaa9a762f3fd68d8673c9b3790955f1b"
+    },
+    {
+      "file": "docs/screenshots/release-readiness.png",
+      "bytes": 236748,
+      "sha256": "9c1196cb5d199f9e4e476ad45263552d4a0db38fae4be0bcc47e3097ed755573"
+    },
+    {
+      "file": "docs/screenshots/execution-failure.png",
+      "bytes": 194454,
+      "sha256": "e6d93ce3049694b65014b92a8ce14b663b4ae9a008d775ac3d94031819314da5"
+    },
+    {
+      "file": "docs/screenshots/field-mappings.png",
+      "bytes": 126615,
+      "sha256": "30cbc23b272ec85b658a1391aad40cb5292035b2dadfdcd2ad5963995ab342ee"
+    },
+    {
+      "file": "docs/screenshots/execution-evidence.png",
+      "bytes": 187847,
+      "sha256": "53779bb4a67b653f0afa26a6f8c49adf5298a16186253ef75416f0cffea6cfa5"
+    },
+    {
+      "file": "docs/screenshots/incident-timeline.png",
+      "bytes": 145334,
+      "sha256": "5f388d12d778b9bedbc3deefe5f2e28f74db490ef7a4e85bf0e8b2b5f7121b78"
+    },
+    {
+      "file": "docs/screenshots/uat-approval.png",
+      "bytes": 192422,
+      "sha256": "2d4191cc20536a91e679320f35c01b425872813309aa4afee9cedc68e66aa354"
+    },
+    {
+      "file": "docs/screenshots/change-impact.png",
+      "bytes": 124661,
+      "sha256": "215b55ac9db98be05637abc987a99530e61ff75a5a575ac494cf90e062ad3cb3"
+    },
+    {
+      "file": "docs/screenshots/release-ready.png",
+      "bytes": 234457,
+      "sha256": "c55fc98527d3dfd3308448ae8dd517e4f9b65a3a9f92d1d86cce8fa326c3a37d"
+    },
+    {
+      "file": "docs/screenshots/completed-release.png",
+      "bytes": 231303,
+      "sha256": "f5f663060520530e1222ecccc94d16e8ce540bbc2c42314c6a343929c9c28123"
+    },
+    {
+      "file": "docs/screenshots/reports.png",
+      "bytes": 127323,
+      "sha256": "36741b21a13b49e03fa08e7fcf910c8fca7ea92dd52bdf61790b885b2a2361ab"
+    },
+    {
+      "file": "docs/screenshots/release-notes.png",
+      "bytes": 117804,
+      "sha256": "919a5228380cc29b78bb172099aaab258b4fef615953a43b8cfded932a141026"
+    },
+    {
+      "file": "docs/screenshots/traceability-complete.png",
+      "bytes": 136204,
+      "sha256": "9a11a78012623b53846ca6965192fb4ef9b225d015f7134c445be4da11baa55b"
+    },
+    {
+      "file": "docs/screenshots/dashboard-mobile.png",
+      "bytes": 58600,
+      "sha256": "5a0e3e94410dc3fc08d351cce16a082c0d8a78931496ca1e734c88665f5682b7"
+    },
+    {
+      "file": "docs/screenshots/mobile-navigation.png",
+      "bytes": 52446,
+      "sha256": "28fe7d3bcc02f1a7d1f51832e7e349800885a66955df80564cb89da2b3e07097"
+    },
+    {
+      "file": "docs/screenshots/mobile.png",
+      "bytes": 54389,
+      "sha256": "1554e551ff7370d4e0693a01bc0c0d2f1250969ea4e0dad423cb286ad0b9d8fc"
+    }
+  ]
+}

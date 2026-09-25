@@ -1,0 +1,999 @@
+{
+  "description": "Observed EICC local verification; fictional portfolio, no hosted CI execution claimed.",
+  "branch": "main",
+  "commit": null,
+  "sqlite_pytest": {
+    "summary": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "64",
+      "time": "59.667",
+      "timestamp": "2026-09-13T23:17:42.932158-04:00"
+    },
+    "statement_coverage": {
+      "lines-covered": "1549",
+      "lines-valid": "1697",
+      "line-rate": "0.9128"
+    },
+    "cases": [
+      {
+        "name": "test_authenticated_mode_password_roles_csrf_expiry_and_no_demo",
+        "class": "tests.test_accounts",
+        "seconds": 1.113,
+        "passed": true
+      },
+      {
+        "name": "test_account_provisioning_rejects_weak_password_duplicate_and_keeps_secrets_out_of_audit",
+        "class": "tests.test_accounts",
+        "seconds": 0.486,
+        "passed": true
+      },
+      {
+        "name": "test_seed_meets_domain_minimums",
+        "class": "tests.test_api",
+        "seconds": 0.84,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[projects]",
+        "class": "tests.test_api",
+        "seconds": 0.392,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[stakeholders]",
+        "class": "tests.test_api",
+        "seconds": 0.459,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[processes]",
+        "class": "tests.test_api",
+        "seconds": 0.435,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[requirements]",
+        "class": "tests.test_api",
+        "seconds": 1.313,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[systems]",
+        "class": "tests.test_api",
+        "seconds": 1.783,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[integrations]",
+        "class": "tests.test_api",
+        "seconds": 0.805,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[dependencies]",
+        "class": "tests.test_api",
+        "seconds": 0.737,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[risks]",
+        "class": "tests.test_api",
+        "seconds": 0.761,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[test-plans]",
+        "class": "tests.test_api",
+        "seconds": 0.64,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[test-cases]",
+        "class": "tests.test_api",
+        "seconds": 0.678,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[uat]",
+        "class": "tests.test_api",
+        "seconds": 0.891,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[uat-scenarios]",
+        "class": "tests.test_api",
+        "seconds": 0.55,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[incidents]",
+        "class": "tests.test_api",
+        "seconds": 0.508,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[changes]",
+        "class": "tests.test_api",
+        "seconds": 0.618,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[releases]",
+        "class": "tests.test_api",
+        "seconds": 0.665,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[training]",
+        "class": "tests.test_api",
+        "seconds": 0.862,
+        "passed": true
+      },
+      {
+        "name": "test_catalog_list_and_detail[documents]",
+        "class": "tests.test_api",
+        "seconds": 0.535,
+        "passed": true
+      },
+      {
+        "name": "test_crud_validation_and_optimistic_concurrency",
+        "class": "tests.test_api",
+        "seconds": 0.944,
+        "passed": true
+      },
+      {
+        "name": "test_cross_project_references_and_cycles_rejected",
+        "class": "tests.test_api",
+        "seconds": 0.877,
+        "passed": true
+      },
+      {
+        "name": "test_no_status_shortcuts_and_blank_release_not_ready",
+        "class": "tests.test_api",
+        "seconds": 0.97,
+        "passed": true
+      },
+      {
+        "name": "test_traceability_uses_links_and_filters",
+        "class": "tests.test_api",
+        "seconds": 1.991,
+        "passed": true
+      },
+      {
+        "name": "test_dashboard_metrics_change_after_actual_execution",
+        "class": "tests.test_api",
+        "seconds": 2.298,
+        "passed": true
+      },
+      {
+        "name": "test_uat_requires_evidence_and_records_explicit_override",
+        "class": "tests.test_api",
+        "seconds": 0.924,
+        "passed": true
+      },
+      {
+        "name": "test_change_analysis_stales_after_relationship_change",
+        "class": "tests.test_api",
+        "seconds": 0.941,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Business Requirements Document]",
+        "class": "tests.test_api",
+        "seconds": 0.814,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Functional Requirements Document]",
+        "class": "tests.test_api",
+        "seconds": 0.888,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Integration Specification]",
+        "class": "tests.test_api",
+        "seconds": 0.776,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Test Plan]",
+        "class": "tests.test_api",
+        "seconds": 0.896,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[UAT Plan]",
+        "class": "tests.test_api",
+        "seconds": 0.744,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Release Notes]",
+        "class": "tests.test_api",
+        "seconds": 1.052,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Training Guide]",
+        "class": "tests.test_api",
+        "seconds": 0.763,
+        "passed": true
+      },
+      {
+        "name": "test_reports_are_versioned_real_data_snapshots[Project Status Report]",
+        "class": "tests.test_api",
+        "seconds": 2.108,
+        "passed": true
+      },
+      {
+        "name": "test_database_foreign_keys_and_risk_constraints",
+        "class": "tests.test_api",
+        "seconds": 0.918,
+        "passed": true
+      },
+      {
+        "name": "test_search_treats_sql_and_wildcards_as_text",
+        "class": "tests.test_api",
+        "seconds": 0.389,
+        "passed": true
+      },
+      {
+        "name": "test_mapping_change_invalidates_test_and_release_evidence",
+        "class": "tests.test_evidence_governance",
+        "seconds": 3.608,
+        "passed": true
+      },
+      {
+        "name": "test_payload_change_requires_fresh_execution",
+        "class": "tests.test_evidence_governance",
+        "seconds": 1.095,
+        "passed": true
+      },
+      {
+        "name": "test_evidence_attachment_round_trip_integrity_and_validation",
+        "class": "tests.test_evidence_governance",
+        "seconds": 0.901,
+        "passed": true
+      },
+      {
+        "name": "test_uat_attachment_links_to_persisted_acceptance_result",
+        "class": "tests.test_evidence_governance",
+        "seconds": 0.859,
+        "passed": true
+      },
+      {
+        "name": "test_demo_reset_preserves_other_projects_and_recreates_real_evidence",
+        "class": "tests.test_evidence_governance",
+        "seconds": 4.29,
+        "passed": true
+      },
+      {
+        "name": "test_testers_cannot_change_system_state",
+        "class": "tests.test_evidence_governance",
+        "seconds": 0.777,
+        "passed": true
+      },
+      {
+        "name": "test_migration_upgrade_downgrade_and_reupgrade",
+        "class": "tests.test_migrations",
+        "seconds": 1.582,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[success-201]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.459,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[bad_request-400]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.389,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[unauthorized-401]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.38,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[not_found-404]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.484,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[conflict-409]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.367,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[server_error-500]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.343,
+        "passed": true
+      },
+      {
+        "name": "test_rest_controlled_responses[timeout-504]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.535,
+        "passed": true
+      },
+      {
+        "name": "test_case_idempotency_retrieval_and_conflict",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.398,
+        "passed": true
+      },
+      {
+        "name": "test_async_notification_accepted",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.364,
+        "passed": true
+      },
+      {
+        "name": "test_soap_contract_and_fault[xsd:string-200]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.36,
+        "passed": true
+      },
+      {
+        "name": "test_soap_contract_and_fault[xsd:int-500]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.426,
+        "passed": true
+      },
+      {
+        "name": "test_unsafe_or_malformed_xml_is_rejected[<!DOCTYPE a [<!ENTITY x SYSTEM \"file:///etc/passwd\">]><a>&x;</a>]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.346,
+        "passed": true
+      },
+      {
+        "name": "test_unsafe_or_malformed_xml_is_rejected[<broken]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.335,
+        "passed": true
+      },
+      {
+        "name": "test_unsafe_or_malformed_xml_is_rejected[<CreateCase/>]",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.344,
+        "passed": true
+      },
+      {
+        "name": "test_local_runner_timeout_and_soap_failure_evidence",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.833,
+        "passed": true
+      },
+      {
+        "name": "test_auth_csrf_roles_and_session_revocation",
+        "class": "tests.test_security_simulators",
+        "seconds": 1.027,
+        "passed": true
+      },
+      {
+        "name": "test_analyst_cannot_approve_change",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.688,
+        "passed": true
+      },
+      {
+        "name": "test_origin_request_size_headers_and_no_arbitrary_endpoint",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.702,
+        "passed": true
+      },
+      {
+        "name": "test_openapi_has_typed_domain_schemas",
+        "class": "tests.test_security_simulators",
+        "seconds": 0.737,
+        "passed": true
+      },
+      {
+        "name": "test_complete_business_need_to_release_workflow",
+        "class": "tests.test_workflow",
+        "seconds": 2.092,
+        "passed": true
+      }
+    ]
+  },
+  "postgres_pytest": {
+    "source": "Observed docker compose verification container stdout",
+    "passed": 64,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 2,
+    "seconds": 56.18
+  },
+  "browser_local": {
+    "stats": {
+      "startTime": "2026-09-14T03:11:16.126Z",
+      "duration": 100467.725,
+      "expected": 25,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "file": "governance.spec.ts",
+        "name": "stakeholder evidence, attachments, change approval and release readiness through the browser",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 18685
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "dashboard uses live metrics, changes views and exports a stored report",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2658
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders projects from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2384
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders requirements from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2405
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders traceability from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2329
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders systems from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2419
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders integrations from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2826
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders test-cases from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2406
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders test-plans from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2300
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders uat from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2229
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders uat-scenarios from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2255
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders incidents from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2354
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders changes from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2240
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders risks from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2268
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders dependencies from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2266
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders releases from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2217
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders reports from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2177
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders training from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2187
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders processes from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2191
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders administration from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2287
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "requirement authoring, filtering, persisted editing and global search",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 7635
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "SOAP failure, defect, mapping correction and passing retest are visible",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 9873
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "traceability filters and release gates are explainable",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 5703
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "keyboard access, dark mode and dashboard accessibility",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2817
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "mobile navigation stays within the viewport",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2398
+          }
+        ]
+      }
+    ]
+  },
+  "browser_docker": {
+    "stats": {
+      "startTime": "2026-09-14T03:06:22.429Z",
+      "duration": 110112.83399999999,
+      "expected": 25,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "file": "governance.spec.ts",
+        "name": "stakeholder evidence, attachments, change approval and release readiness through the browser",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 25623
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "dashboard uses live metrics, changes views and exports a stored report",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2772
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders projects from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 3137
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders requirements from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2597
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders traceability from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2591
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders systems from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2603
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders integrations from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2561
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders test-cases from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2601
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders test-plans from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2591
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders uat from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2585
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders uat-scenarios from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2570
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders incidents from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2629
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders changes from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2576
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders risks from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2591
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders dependencies from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2622
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders releases from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2672
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders reports from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2581
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders training from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2593
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders processes from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2585
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "renders administration from the real API",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 3118
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "requirement authoring, filtering, persisted editing and global search",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 7893
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "SOAP failure, defect, mapping correction and passing retest are visible",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 13093
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "traceability filters and release gates are explainable",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 5263
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "keyboard access, dark mode and dashboard accessibility",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2557
+          }
+        ]
+      },
+      {
+        "file": "workspace.spec.ts",
+        "name": "mobile navigation stays within the viewport",
+        "outcome": "expected",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration_ms": 2054
+          }
+        ]
+      }
+    ]
+  },
+  "checks": {
+    "ruff": "passed",
+    "typescript_vite_build": "passed",
+    "pip_audit": "no known vulnerabilities",
+    "npm_audits": "0 vulnerabilities",
+    "actionlint_1.7.12": "passed",
+    "compose_config": "passed",
+    "compose_health": "frontend, backend, postgres healthy",
+    "clean_authenticated_bootstrap": "passed"
+  }
+}

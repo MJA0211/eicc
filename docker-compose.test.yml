@@ -1,0 +1,16 @@
+services:
+  tests:
+    build:
+      context: .
+      target: verification
+    environment:
+      EICC_TEST_DATABASE_URL: postgresql+psycopg://eicc:${EICC_POSTGRES_PASSWORD}@postgres:5432/eicc
+      EICC_DATABASE_URL: sqlite:////tmp/eicc-test-unused.db
+      EICC_DEMO_MODE: "true"
+      EICC_SECURE_COOKIES: "false"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
