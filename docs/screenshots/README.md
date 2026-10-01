@@ -1,6 +1,6 @@
 # EICC screenshot gallery
 
-Fresh captures of the redesigned application, recorded 2026-09-14. Desktop captures use a 1600 × 900 viewport; mobile captures use 390 × 844. Selected detail pages include the full page so evidence and gates remain visible.
+Application screenshots recorded on September 14, 2026. Desktop captures use a 1600 × 900 viewport; mobile captures use 390 × 844. Selected detail pages include the full page so evidence and gates remain visible.
 
 [Watch the captioned demo](../demo/eicc-walkthrough.mp4) · [Demo chapters and transcript](../demo/transcript.md) · [UI design notes](../ui-design.md)
 

@@ -15,8 +15,7 @@ TLS, broker, or production-service behavior.
 
 `artifacts` stores a globally unique human key, type, title, project, owner, workflow status, timestamps, and
 optimistic revision. Seventeen joined subtype tables store their own domain fields. Shared identity allows a
-foreign-key-backed `artifact_links` table to connect any supported artifact while preserving actual referential
-integrity. This avoids polymorphic free-text IDs or fabricated UI relationships.
+foreign-key-backed `artifact_links` table to connect any supported artifact while enforcing referential integrity.
 
 Domain-specific foreign keys connect integrations to source/target systems, test cases to plans/requirements/
 integrations, UAT scenarios to sessions/requirements, and evidence/approvals to their parent records. JSON stores
@@ -46,7 +45,7 @@ erDiagram
 
 ## Workflow consistency
 
-Create schemas deliberately exclude workflow status. Updates also reject status, internal approval fields,
+Create schemas exclude workflow status. Updates also reject status, internal approval fields,
 unknown properties, cross-project changes, and stale revisions. Dedicated transition endpoints enforce explicit
 state graphs and permission rules. Database exceptions are converted to conflict responses; successful mutations
 and their audit records commit together.
@@ -67,11 +66,10 @@ Alembic migrations are checked by upgrading an empty database, downgrading, upgr
 result with the SQLAlchemy metadata. PostgreSQL test runs create and drop dedicated `eicc_test_*` schemas per
 test, preserving the deployed demonstration schema. Browser tests use a temporary database by default.
 
-The initial seed records definitions before performing actual HTTP test executions. Startup stops if evidence
+The seed writes definitions before running HTTP tests. Startup stops if evidence
 initialization fails. Explicit demo reset removes the Northstar scope in referential order, preserves other
 projects, reruns the simulators, and records a reset event. It is a demo operation, not a general database restore.
 
 Pagination is supported on domain collection APIs. The workspace bootstrap currently loads the selected
 organization's portfolio-sized catalogs; large production installations would require server-side selection
-throughout the UI and additional query optimization. This tradeoff keeps the portfolio understandable without
-claiming enterprise-scale performance.
+throughout the UI and additional query optimization. The current bootstrap suits the small demo dataset; production-scale query performance has not been measured.

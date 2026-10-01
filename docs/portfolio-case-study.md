@@ -3,7 +3,7 @@
 ## Context and disclosure
 
 Northstar Enterprise Services, its staff, its case workflow, and its release decisions are fictional. This is
-an independently built portfolio demonstration. It is not affiliated with the Maryland Judiciary, another
+a personal software project in development. It is not affiliated with the Maryland Judiciary, another
 government organization, or an enterprise customer. The results below describe implemented and tested software,
 not employment experience, stakeholder research conducted with real users, or measured organizational savings.
 
@@ -14,9 +14,7 @@ association, and inconsistent status notifications. A change to the case identif
 interface, downstream messages, reporting, test evidence, and a release decision. Separate spreadsheets make
 those relationships difficult to inspect.
 
-The analyst objective is to retain the business reason for a change while making its technical consequences
-reviewable. EICC connects that reason to requirements, contracts, test results, defects, acceptance evidence,
-and delivery controls in one persisted workspace.
+An analyst needs to explain why a change is needed and trace what it affects. EICC stores the requirements, interface contracts, test results, defects, and approvals needed to review that change.
 
 ## Stakeholders and elicitation artifacts
 
@@ -43,15 +41,14 @@ and attempts to assign workflow status through ordinary editing.
 
 ## Interface analysis and mapping
 
-Seven systems and seven integrations document the application landscape. The catalog distinguishes REST/JSON
+The catalog covers seven systems and seven integrations. The catalog distinguishes REST/JSON
 from SOAP/XML, synchronous from asynchronous interactions, and design authentication metadata from local
 simulator authorization. Each contract includes source and target systems, method or action, payload shape,
 field mappings, validation, and related requirements.
 
-The legacy SOAP example deliberately sends an integer identifier where the service requires `xsd:string`.
-The analyst can inspect the actual XML fault, identify the mapping defect, apply a string conversion, and
-retain the corrected request and successful retest. A separate partner example maps `status` to an incorrect
-field, demonstrating that transport success and payload correctness are different questions.
+The legacy SOAP example sends an integer identifier where the service requires `xsd:string`.
+The analyst can inspect the XML fault, identify the mapping defect, apply a string conversion, and
+retain the corrected request and successful retest. A separate partner example returns an HTTP success response despite mapping `status` to the wrong field. Its payload check still fails.
 
 The simulators execute locally. An asynchronous response means the simulator accepted a message; it does not
 prove delivery through an external queue or mail provider.
@@ -63,7 +60,7 @@ result, severity, mandatory flag, and scenario. Executions retain request, respo
 duration, actor, timestamp, and a fingerprint of the tested contract. Manual cases require written evidence.
 Optional files provide supporting screenshots or documents with an integrity digest.
 
-The seeded 24 protocol cases produce actual local responses, including controlled authentication, timeout,
+The 24 seeded protocol cases produce local responses, including controlled authentication, timeout,
 schema, mapping, and downstream-service failures. A failed execution can create a linked defect. Assignment,
 investigation, root cause, resolution, retest, closure, and reopening are represented in the incident workflow.
 The server prevents resolution without a subsequent passing result for the current contract.
@@ -79,8 +76,7 @@ Ordinary approval requires all mandatory scenarios to pass. Incomplete acceptanc
 an explicit, substantive override reason, which remains visible in the decision history.
 
 Approval is tied to an acceptance fingerprint. Changed criteria, relevant contracts, or test evidence make an
-earlier decision stale. The release gate therefore checks acceptance of the current scope, rather than merely
-the presence of an old approval record.
+earlier decision stale. The release gate checks whether the approval covers the current scope.
 
 ## Risk, dependency, and change control
 
@@ -117,8 +113,7 @@ The deliverable is a running React/FastAPI application with SQLAlchemy, Alembic,
 development mode, Docker Compose, CI configuration, and automated verification. Exact execution counts, build
 results, screenshots, and environment details appear in [the verification report](verification.md).
 
-The demonstrated result is that the analyst can follow and validate the full lifecycle using actual persisted
-application data. No monetary savings, reduced processing time, production adoption, or real enterprise
+An analyst can follow a requirement through integration testing, defect resolution, acceptance, and release checks using stored application records. No monetary savings, reduced processing time, production adoption, or real enterprise
 acceptance is asserted.
 
 ## Lessons and practical limits

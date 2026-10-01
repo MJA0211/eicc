@@ -302,15 +302,15 @@ function Login({ onLogin }: { onLogin: (session: Session) => void }) {
         <div>
           <span className="eyebrow">ENTERPRISE INTEGRATION WORKSPACE</span>
           <h1>
-            From business intent
+            Trace requirements
             <br />
-            to release confidence.
+            through testing
             <br />
-            <em>See the whole story.</em>
+            <em>and release.</em>
           </h1>
           <p>
-            Connect business intent to integration evidence, stakeholder
-            acceptance, and a release you can explain.
+            Track requirements through integration tests and stakeholder
+            approval before making a release decision.
           </p>
           <div className="login-flow">
             <span>Define</span>
@@ -323,8 +323,8 @@ function Login({ onLogin }: { onLogin: (session: Session) => void }) {
           </div>
         </div>
         <p className="fiction-note">
-          A fictional enterprise portfolio. Built around Northstar Enterprise
-          Services.
+          A software project built around the fictional Northstar Enterprise
+          Services scenario.
         </p>
       </div>
       <div className="login-form">
@@ -340,8 +340,8 @@ function Login({ onLogin }: { onLogin: (session: Session) => void }) {
             </div>
             <h3>Explore Northstar</h3>
             <p>
-              A connected project, real local test executions, and a release
-              with something to prove.
+              Run the local integration tests, inspect failures, and check what
+              blocks the pilot release.
             </p>
             <label htmlFor="demo-role">Explore as</label>
             <select
@@ -469,7 +469,7 @@ function FormDialog({ dialog, close }: { dialog: Dialog; close: () => void }) {
       await dialog.submit(payload);
       await refresh();
       close();
-      notify("Changes saved successfully");
+      notify("Changes saved");
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -765,10 +765,7 @@ function App() {
     window.addEventListener("keydown", keyboard);
     return () => window.removeEventListener("keydown", keyboard);
   }, []);
-  async function action(
-    fn: () => Promise<any>,
-    message = "Changes saved successfully",
-  ) {
+  async function action(fn: () => Promise<any>, message = "Changes saved") {
     setBusy(true);
     setError("");
     try {
@@ -1228,7 +1225,7 @@ function Dashboard() {
       <PageHeading
         eyebrow="WORKSPACE / OVERVIEW"
         title="Project overview"
-        description="Track delivery, review evidence, and keep your next release moving."
+        description="Review test results and the issues blocking your next release."
       >
         <button
           className="button secondary"
@@ -1496,7 +1493,7 @@ function Dashboard() {
         <Section
           className="progress-panel"
           title="Delivery progress"
-          subtitle="From business intent to acceptance"
+          subtitle="Requirement status and acceptance"
           aside={<Activity size={17} />}
         >
           <div className="delivery-progress">
@@ -1542,7 +1539,7 @@ function Dashboard() {
         <Section
           className="landscape-panel"
           title="Integration landscape"
-          subtitle="The systems behind the case-intake journey"
+          subtitle="Systems in the case-intake workflow"
           aside={
             <Link className="subtle-link" to="/integrations">
               View catalog <ArrowUpRight size={15} />
@@ -2830,7 +2827,7 @@ function Mappings({ record }: { record: Artifact }) {
     open({
       title: mapping ? "Edit field mapping" : "Add field mapping",
       description:
-        "Mappings transform the payload used by actual local integration tests.",
+        "Use mappings to transform the payload sent to the local simulator.",
       schema: mappingSchema,
       values: mapping,
       submit: (data) =>
@@ -2844,7 +2841,7 @@ function Mappings({ record }: { record: Artifact }) {
   return (
     <Section
       title="Source-to-target field mappings"
-      subtitle="Explicit transformations. Validated inputs. Inspectable payloads."
+      subtitle="Define how source fields map to the integration payload."
       aside={
         <button className="button primary" onClick={() => edit()}>
           <Plus size={16} />
@@ -3067,7 +3064,7 @@ function ExecutionPanel({
         ) : (
           <Empty
             title="Ready for its first run"
-            description="Execute the integration test to retain a real request and response, or record manual test evidence."
+            description="Run the integration test to save its request and response, or record evidence from a manual test."
           />
         )}
       </div>
@@ -3281,7 +3278,7 @@ function Reports() {
       <PageHeading
         eyebrow="CONTROLLED PROJECT DOCUMENTATION"
         title="Project reports"
-        description="Generate versioned Markdown documents directly from stored project data. No invented project facts."
+        description="Generate versioned Markdown reports from your stored project records."
       />
       <div className="report-grid">
         {types.map((type, i) => {

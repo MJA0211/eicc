@@ -1,5 +1,9 @@
 # Working on EICC
 
+Fork the repository and open a pull request to propose a change. Only the owner
+has write access. Changes from contributors need the owner's review before they
+can be merged. Contributions are covered by the [MIT License](LICENSE).
+
 Read [the architecture](docs/architecture.md), [capability traceability](docs/requirements-traceability.md), and
 [security and operations](docs/security-and-operations.md) before changing lifecycle rules. Keep the fictional
 scenario disclosure intact. Do not add real credentials, production data, fabricated test evidence, or invented

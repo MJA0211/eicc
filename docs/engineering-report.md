@@ -55,9 +55,9 @@ documented and verified. Demo role selection is explicitly an exploration featur
 The production frontend build passes. Compose builds and starts healthy frontend, backend, and PostgreSQL
 containers, with the application reachable at `http://127.0.0.1:8080`. Local helpers start the SQLite-backed
 workspace at `http://127.0.0.1:5173`. Both use the delivered source. CI configuration passes Actionlint;
-the corresponding build/test/deployment commands were executed locally. No remote CI run is claimed.
+the build, test, and deployment commands passed locally. The [GitHub Actions run](https://github.com/MJA0211/eicc/actions/runs/36122536261) also passed its backend, browser, and deployment jobs.
 
-## Documentation and portfolio value
+## Documentation
 
 Delivered documentation includes setup, architecture, domain and process diagrams, the demonstration guide,
 capability-to-test traceability, security and operations, contribution guidance, this engineering report,
@@ -75,7 +75,5 @@ production integration, external notification delivery, or measured business sav
 are contract design metadata; the local simulator uses EICC sessions. Queue acceptance is simulated without
 an external worker. This is not a certified, highly available, multitenant production platform.
 
-Branch: `main`. Commit: none created. Working tree: new implementation files remain uncommitted. No push,
-release, package publication, or remote configuration change was performed. Private configuration, databases,
-logs, and dependency/build directories are excluded from Git. Known non-failing tool warnings and verification
+Source is maintained on `main` in [MJA0211/eicc](https://github.com/MJA0211/eicc). Private configuration, databases, logs, and dependency/build directories are excluded from Git. Known non-failing tool warnings and verification
 scope are recorded in the verification report.

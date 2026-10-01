@@ -1,23 +1,18 @@
-# EICC — Enterprise Integration Control Center
+# EICC: Enterprise Integration Control Center
 
-**A working business-systems portfolio that connects requirements to integration evidence and release decisions.**
+[MIT license](LICENSE) · [Source](https://github.com/MJA0211/eicc) · [Portfolio and demo](https://mawwad.dev/#eicc)
 
-EICC is a personal project in active development. Repository: [MJA0211/eicc](https://github.com/MJA0211/eicc). Portfolio and recorded demo: [mawwad.dev](https://mawwad.dev/#eicc).
+I built EICC to track an integration change from its requirements through tests, defects, acceptance, and release decisions. This personal project is still in development.
 
-EICC follows a fictional Northstar Enterprise Services project from the business need through requirements,
-system interfaces, test execution, defects, user acceptance, change control, and delivery. Its dashboards and
-readiness checks query persisted records. Its test runner sends actual HTTP requests to controlled local
-REST/JSON and SOAP/XML simulators and retains the responses.
+The demo follows a fictional case-intake project at Northstar Enterprise Services. Dashboards and release checks query stored records. The test runner sends HTTP requests to local REST/JSON and SOAP/XML simulators and saves the responses for review.
 
-**Northstar and this project are fictional. EICC is not affiliated with, used by, endorsed by, or representative
-of the Maryland Judiciary, any government organization, or ServiceNow. No real enterprise deployment or business
-outcome is claimed.**
+Northstar, its staff, and its release decisions are fictional. EICC has no affiliation with the Maryland Judiciary, any government organization, or ServiceNow. It has no real enterprise deployment or measured business outcomes.
 
 ![EICC project overview](docs/screenshots/dashboard.png)
 
-**[Watch the recorded demo](docs/demo/eicc-walkthrough.mp4)** · [Browse the new screenshot gallery](docs/screenshots/README.md) · [Demo chapters and transcript](docs/demo/transcript.md)
+**[Watch the recorded demo](docs/demo/eicc-walkthrough.mp4)** · [Browse the screenshot gallery](docs/screenshots/README.md) · [Demo chapters and transcript](docs/demo/transcript.md)
 
-The captioned walkthrough follows a real local SOAP failure through a mapping correction, passing retest,
+The captioned walkthrough follows a local SOAP failure through a mapping correction, passing retest,
 stakeholder acceptance, change approval, and completed release. [Recording and reproduction details](docs/demo/README.md).
 
 ## Start the application
@@ -35,8 +30,7 @@ Open **http://127.0.0.1:8080**. Choose a demo role and enter the workspace. The 
 seeds Northstar once, executes its 24 local protocol tests, and verifies the historical release automatically.
 Subsequent starts preserve the data.
 
-On this Windows workstation, Docker is available in the Ubuntu WSL distribution. The helper also keeps WSL
-alive while the containers run:
+On Windows with Docker installed in Ubuntu WSL, the helper keeps WSL running while the containers are active:
 
 ```powershell
 powershell -File scripts/start-docker.ps1
@@ -83,7 +77,7 @@ powershell -File scripts/stop-local.ps1
 ## The business problem
 
 Northstar case operators re-enter data, associate documents manually, and send case-status messages by hand.
-The fictional modernization project defines a validated workflow across Case Intake, Legacy Records, Document
+The fictional modernization project covers Case Intake, Legacy Records, Document
 Management, Notification Service, Identity & Access, Reporting Warehouse, and External Partner Gateway.
 
 The analyst needs to answer practical questions:
@@ -132,15 +126,13 @@ responsive tables, native dialogs, local fonts, and light/dark themes.
 
 ## Domain model and traceability
 
-The relational model uses a common artifact identity with **joined subtype tables**, rather than storing all
-domain data in one JSON blob. Projects, stakeholders, processes, requirements, systems, integrations,
+The relational model uses a common artifact identity with joined subtype tables. Projects, stakeholders, processes, requirements, systems, integrations,
 dependencies, risks, test plans/cases, UAT sessions/scenarios, incidents, changes, releases, training, and documents
 have typed columns. Organization, mapping, execution, UAT result/approval, evidence attachment, session, user,
 and audit tables hold their own records.
 
 `artifact_links` has source and target foreign keys, a typed relation, a uniqueness constraint, and a self-link
-constraint. Domain-specific references, such as a test's requirement and integration, are foreign keys to their
-subtype tables. Cross-project references and requirement decomposition cycles are rejected by the API.
+constraint. Foreign keys connect a test to its requirement and integration subtype tables. The API rejects cross-project references and requirement decomposition cycles.
 
 ```mermaid
 flowchart LR
@@ -189,8 +181,7 @@ flowchart TD
 | `POST /simulator/notifications` | Returns simulated delivery or 202 queue acceptance; only `.test` recipients        |
 | `POST /simulator/soap`          | Parses a SOAP 1.1 envelope and requires `case_id` with `xsi:type="xsd:string"`     |
 
-Controlled scenarios cover successful responses, 400, 401, 404, 409, 500, and timeout. The runner uses an actual
-in-process HTTP client against the same FastAPI application. A controlled timeout has an 80 ms client deadline
+Controlled scenarios cover successful responses, 400, 401, 404, 409, 500, and timeout. The runner uses an in-process HTTP client against the same FastAPI application. A controlled timeout has an 80 ms client deadline
 against a slower fixture. This is a deterministic fault demonstration, not a production latency measurement.
 
 Field transformations are a fixed allowlist: identity, string conversion, integer conversion, uppercase,
@@ -251,7 +242,7 @@ fictional delivery decision; it does not deploy external software.
 | Manager       | Analyst actions plus requirement/change approvals and release transitions |
 | Administrator | All workspace actions, including explicit demo reset                      |
 
-Demo role selection is deliberately enabled only when `EICC_DEMO_MODE=true`. It is an exploration feature,
+Demo role selection is enabled only when `EICC_DEMO_MODE=true`. It is an exploration feature,
 not a security boundary. For authenticated deployment, configure a private administrator email/password,
 disable demo mode, enable secure cookies, and terminate HTTPS. Passwords use Argon2. Sessions use random opaque
 tokens, store only token digests, expire, and can be revoked. Browser writes require a session-bound CSRF token
@@ -318,7 +309,7 @@ Executions create actual failure records, including schema mismatch, rejected au
 incorrect mapping, and downstream error. The historical release is completed only after its local gates pass.
 The pilot intentionally remains not ready.
 
-Definitions, relationships, and fault patterns are deterministic. Execution timestamps, generated record keys,
+The seed uses fixed definitions, relationships, and fault patterns. Execution timestamps, generated record keys,
 session tokens, and measured durations are runtime values. Seeded UAT sign-off is explicitly marked as fictional
 illustrative acceptance, not a claim that an actual stakeholder reviewed the project.
 
@@ -339,9 +330,13 @@ external object storage, distributed rate limits, highly available queues, and c
 outside this demonstration. Human approval remains authoritative. Nothing calls real Judiciary or production
 enterprise systems, and no time savings, cost savings, adoption, or real-world experience is fabricated.
 
-The demonstrated competencies are requirements analysis, functional decomposition, interface analysis, field
-mapping, protocol troubleshooting, test management, evidence handling, UAT coordination, incident investigation,
-impact analysis, change control, release governance, technical documentation, and reproducible delivery.
+## License and contributions
+
+EICC is licensed under the [MIT License](LICENSE), copyright 2026 Muhammed Awwad. Dependency and bundled font licenses remain in effect.
+
+You can fork the code and propose changes through a pull request. Repository write access is limited to the owner; proposed changes require owner review. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and checks.
+
+I used [Humanizer](https://github.com/blader/humanizer) and [Stop Slop](https://github.com/hardikpandya/stop-slop) to edit the documentation and interface text.
 
 ## Implementation references
 

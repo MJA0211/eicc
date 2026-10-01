@@ -1,6 +1,6 @@
-# Workspace UI redesign
+# Workspace interface
 
-The workspace now uses white and slate surfaces, cobalt blue controls, and a navy project summary. The same
+The workspace uses white and slate surfaces, cobalt blue controls, and a navy project summary. The same
 visual system covers the dashboard, navigation, catalogs, record details, forms, evidence, reports, and login.
 Dark mode uses slate and navy surfaces with separately tuned text and accent colors.
 
@@ -8,11 +8,11 @@ Dark mode uses slate and navy surfaces with separately tuned text and accent col
 
 - The light sidebar groups the analyst workflow, integration work, and delivery governance. Blue selection
   states identify the current page; incident counts retain a semantic alert color.
-- The project overview starts with the active project, its actual requirement/integration/test counts, completion,
+- The project overview starts with the active project, its requirement/integration/test counts, completion,
   and target date. A single four-column metric strip replaces the separate colored statistic cards.
 - Release readiness and quality results share the first dashboard row. Priority items and delivery progress
   follow, with the integration landscape arranged horizontally across the lower section.
-- Larger table text, clearer headings, consistent controls, and quieter borders improve scanning. Page titles
+- Tables use larger text and subdued borders; forms share the same controls. Page titles
   identify their function directly: Project overview, Traceability matrix, Project reports, and Administration.
 - At smaller widths, navigation becomes a drawer and the dashboard stacks into one column. The drawer supports
   Escape, exposes its expanded state, and removes its links from keyboard navigation while closed.
